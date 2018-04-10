@@ -4,7 +4,7 @@
   <groupId>tech</groupId>
   <artifactId>mahindra</artifactId>
   <packaging>war</packaging>
-  <version>3.0.2-SNAPSHOT</version>
+  <version>3.0.2</version>
      <name>mahindra Maven Webapp</name>
   <url>http://maven.apache.org</url>
   
@@ -80,6 +80,21 @@
 
 </plugins>
 </pluginManagement>
+
+
 </build>
+<distributionManagement>
+ 
+  <snapshotRepository>
+  <id>simha</id>
+  <name>simha</name>
+  <url>http://localhost:8081/nexus/content/repositories/simha/</url>
+  </snapshotRepository>
+  <repository>
+         <id>releaserepo</id>
+         <name>releaserepo</name>
+         <url>http://localhost:8081/nexus/content/repositories/releaserepo/</url>
+    </repository>
+ </distributionManagement>
 </project>
 
